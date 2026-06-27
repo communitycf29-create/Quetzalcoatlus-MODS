@@ -38,7 +38,6 @@ export default {
 
             if (now < lastGamble + GAMBLE_COOLDOWN) {
                 const remaining = lastGamble + GAMBLE_COOLDOWN - now;
-                const minutes = Math.floor(remaining / (1000 * 60));
                 const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
 
                 throw createError(
